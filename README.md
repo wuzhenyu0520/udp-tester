@@ -1,22 +1,22 @@
 # udp-tester
 udp测试工具
 
-包含内容
-服务端——server
-客户端——client
-配置文件——conf.ini
+包含内容  
+服务端——server  
+客户端——client  
+配置文件——conf.ini  
 
-使用ini格式配置文件
-通过修改配置文件，控制服务端监听地址及端口范围，控制客户端测试地址及端口范围
+使用ini格式配置文件  
+通过修改配置文件，控制服务端监听地址及端口范围，控制客户端测试地址及端口范围  
 
-[udp-tester]
-listenaddr=127.0.0.1
-minport=30000
-maxport=30010
-
-listenaddr：服务端监听地址，或客户端尝试连接地址
-minport：udp端口范围起始端口
-maxport：udp端口范围结束端口
+[udp-tester]  
+listenaddr=127.0.0.1  
+minport=30000  
+maxport=30010  
+  
+listenaddr：服务端监听地址，或客户端尝试连接地址  
+minport：udp端口范围起始端口  
+maxport：udp端口范围结束端口  
 
 ## 使用方法
 1、修改配置文件进行server启动  
