@@ -30,7 +30,7 @@ func main() {
 			checkError(err)
 
 			for {
-				handleClient(conn)
+				handleClient(conn, i)
 			}
 		}()
 		time.Sleep(time.Duration(100)*time.Millisecond)
@@ -39,7 +39,7 @@ func main() {
 
 }
 
-func handleClient(conn *net.UDPConn) {
+func handleClient(conn *net.UDPConn, port string) {
 
 	var buf [1024]byte
 
@@ -49,7 +49,7 @@ func handleClient(conn *net.UDPConn) {
 	}
 
 	//daytime := time.Now().String()
-	conninfo := "[INFO]  " + time.Now().String() + "  Connect Sucess!!!"
+	conninfo := "[INFO]  " + time.Now().String() + "  " + port +" Connect Sucess!!!"
 
 	//conn.WriteToUDP([]byte(daytime), addr)
 	conn.WriteToUDP([]byte(conninfo), addr)
