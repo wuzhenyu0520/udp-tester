@@ -33,3 +33,31 @@ maxport：udp端口范围结束端口
     修改listenaddr以配置client连接测试的udp端口地址  
     修改minport以配置client连接测试的udp范围端口起始端口  
     修改maxport以配置client连接测试的udp范围端口起始端口  
+
+测试结果  
+服务端监听  
+Listen udp port 30000  
+Listen udp port 30001  
+Listen udp port 30002  
+Listen udp port 30003  
+Listen udp port 30004  
+Listen udp port 30005  
+Listen udp port 30006  
+Listen udp port 30007  
+Listen udp port 30008  
+Listen udp port 30009  
+Listen udp port 30010  
+
+  
+client连接测试  
+[INFO]  2019-08-21 02:37:22.947435 +0800 CST m=+8.066028618  30000 Connect Sucess!!!  
+[INFO]  2019-08-21 02:37:22.948025 +0800 CST m=+8.066618965  30001 Connect Sucess!!!  
+[INFO]  2019-08-21 02:37:22.948312 +0800 CST m=+8.066905775  30002 Connect Sucess!!!  
+[INFO]  2019-08-21 02:37:22.948526 +0800 CST m=+8.067120265  30003 Connect Sucess!!!  
+[INFO]  2019-08-21 02:37:22.948734 +0800 CST m=+8.067327928  30004 Connect Sucess!!!  
+[INFO]  2019-08-21 02:37:22.948945 +0800 CST m=+8.067539493  30005 Connect Sucess!!!  
+[INFO]  2019-08-21 02:37:22.949703 +0800 CST m=+8.068296981  30006 Connect Sucess!!!  
+[INFO]  2019-08-21 02:37:22.949923 +0800 CST m=+8.068517203  30007 Connect Sucess!!!  
+[INFO]  2019-08-21 02:37:22.950129 +0800 CST m=+8.068723140  30008 Connect Sucess!!!  
+[INFO]  2019-08-21 02:37:22.950443 +0800 CST m=+8.069036850  30009 Connect Sucess!!!  
+[INFO]  2019-08-21 02:37:22.950678 +0800 CST m=+8.069271724  30010 Connect Sucess!!!  
